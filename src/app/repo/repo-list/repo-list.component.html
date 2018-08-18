@@ -1,0 +1,7 @@
+<h3>Liste de repositories</h3>
+
+<div *ngIf="(repos$ | async)?.length">
+  <div *ngFor="let repo of (repos$ | async)">
+    {{repo.name}}
+  </div>
+</div>
